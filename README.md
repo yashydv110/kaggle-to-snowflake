@@ -1,17 +1,17 @@
-# 🍷 Kaggle to Snowflake ETL Project  
+# Kaggle to Snowflake ETL Project  
 
 This project demonstrates how to extract a dataset from **Kaggle**, process it locally, and then load it into **Snowflake** for analysis.  
 It is a simple **ETL (Extract, Transform, Load) pipeline** built in **Python** and **Jupyter Notebook**.  
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 - `ETL_Kaggle.ipynb` → Main Jupyter Notebook containing all steps  
 - `.gitignore` → To ignore sensitive files (like API keys, credentials)  
 
 ---
 
-## ⚙️ Steps Performed  
+## Steps Performed  
 
 ### 1. Kaggle Dataset Download  
 - Authenticated with **Kaggle API**  
