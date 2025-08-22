@@ -8,3 +8,8 @@ kaggle/kaggle.json
 venv/
 __pycache__/
 
+SNOWFLAKE_USER=yashy
+SNOWFLAKE_PASSWORD=YashYadav@2221
+KAGGLE_USERNAME=yyashy
+KAGGLE_KEY=cc028953d02bac068060ebcdb6dd203b
+.env
