@@ -7,7 +7,7 @@ It is a simple ETL (Extract, Transform, Load) pipeline built in Python and Jupyt
 
 ## Project Structure
 
-- `ETL_Kaggle.ipynb` → Main Jupyter Notebook containing all steps  
+- `Kaggle_to_Snowflake_ETL.ipynb` → Main Jupyter Notebook containing all steps  
 - `.gitignore` → To ignore sensitive files (like keys, creds)  
 - `requirements.txt` → Python dependencies  
 
