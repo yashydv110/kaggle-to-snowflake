@@ -1,91 +1,50 @@
-# Kaggle to Snowflake ETL Project  
+# 🍷 Kaggle to Snowflake ETL Project  
 
 This project demonstrates how to extract a dataset from **Kaggle**, process it locally, and then load it into **Snowflake** for analysis.  
-It is a simple ETL (Extract, Transform, Load) pipeline built in **Python** and **Jupyter Notebook**.  
+It is a simple **ETL (Extract, Transform, Load) pipeline** built in **Python** and **Jupyter Notebook**.  
 
 ---
 
-## Project Structure  
+## 📂 Project Structure  
 - `ETL_Kaggle.ipynb` → Main Jupyter Notebook containing all steps  
-- `.gitignore` → To ignore sensitive files (like keys, creds)  
-- `requirements.txt` → Python dependencies  
+- `.gitignore` → To ignore sensitive files (like API keys, credentials)  
 
 ---
 
-## Steps Performed  
+## ⚙️ Steps Performed  
 
 ### 1. Kaggle Dataset Download  
-- Authenticated with Kaggle API  
+- Authenticated with **Kaggle API**  
 - Downloaded dataset: **Wine Reviews**  
 - Extracted files to local folder  
 
 ### 2. Snowflake Connection  
-- Connected to Snowflake using Python connector  
-- Created **database, schema, warehouse, and table**  
+- Connected to **Snowflake** using Python connector  
+- Created **Database, Schema, Warehouse, and Table**  
 
 ### 3. Data Load  
-- Loaded the Kaggle dataset into Snowflake table (`WINE_REVIEWS`)  
+- Loaded the Kaggle dataset into **Snowflake table** (`WINE_REVIEWS`)  
 - Verified data using SQL queries  
 
 ---
 
-## Setup Instructions  
+## Output  
+Kaggle dataset successfully loaded into **Snowflake**  
+Table created: `KAGGLE_ETL.WINE_SCHEMA.WINE_REVIEWS`  
+Data is available for querying and analysis  
 
-### 1. Clone the Repository  
-```bash
-git clone https://github.com/yashydv110/kaggle-to-snowflake.git
-cd kaggle-to-snowflake
 ---
 
-###2. Create Virtual Environment (Optional but Recommended)
-python3 -m venv venv
-source venv/bin/activate
+## Future Enhancements  
+- Automate pipeline using **Airflow** or **Prefect**  
+- Add **data cleaning & transformation** steps  
+- Build **Power BI / Tableau dashboards** on top of Snowflake  
+
 ---
 
-3. Install Dependencies
-pip install -r requirements.txt
+## How to Run  
 
-4. Configure Kaggle API
-
-Place your kaggle.json file in:
-
-~/.kaggle/kaggle.json
-
-
-Set correct permissions:
-
-chmod 600 ~/.kaggle/kaggle.json
-
-5. Configure Snowflake
-
-Update your Snowflake credentials in the notebook:
-
-user = "<YOUR_USERNAME>"
-password = "<YOUR_PASSWORD>"
-account = "<YOUR_ACCOUNT>.snowflakecomputing.com"
-warehouse = "COMPUTE_WH"
-database = "KAGGLE_ETL"
-schema = "WINE_SCHEMA"
-
-6. Run the Notebook
-jupyter notebook ETL_Kaggle.ipynb
-
-📊 Output
-
-Kaggle dataset successfully loaded into Snowflake
-
-Table created: KAGGLE_ETL.WINE_SCHEMA.WINE_REVIEWS
-
-Queries can now be run in Snowflake to analyze the data
-
-Future Enhancements
-
-Automate pipeline using Airflow or Prefect
-
-Add data cleaning & transformation
-
-Build Power BI / Tableau dashboards using Snowflake data
-
-👨‍💻 Author
-
-Yash Yadav
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/yashydv110/kaggle-to-snowflake.git
+   cd kaggle-to-snowflake
