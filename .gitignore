@@ -1,0 +1,10 @@
+# Ignore Kaggle API key
+kaggle/kaggle.json
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+__pycache__/
+
